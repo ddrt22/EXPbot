@@ -61,4 +61,5 @@ async def on_message(message):
         else:
             await message.channel.send(str(id)+" 재획 끝났어 수고했어~")
 
-client.run('NzkxMjQyMDU2OTk1MzA3NTMx.X-MTlg.GiA4k2K1KXrrYI_BDxyuljusXCQ')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
